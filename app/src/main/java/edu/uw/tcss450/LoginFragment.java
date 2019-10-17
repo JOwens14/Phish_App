@@ -1,6 +1,7 @@
 package edu.uw.tcss450;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -88,7 +89,7 @@ public class LoginFragment extends Fragment {
         if (nc.getCurrentDestination().getId() != R.id.loginFragment) {
             nc.navigateUp();
         }
-        nc.navigate(R.id.action_loginFragment_to_successFragment, args);
+        nc.navigate(R.id.action_loginFragment_to_homeActivity, args);
 
     }
 

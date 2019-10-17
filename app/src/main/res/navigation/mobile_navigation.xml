@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="edu.uw.tcss450.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="edu.uw.tcss450.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" />
+    <fragment
+        android:id="@+id/nav_blog"
+        android:name="edu.uw.tcss450.blog.blogFragment"
+        android:label="fragment_blog_list"
+        tools:layout="@layout/fragment_blog_list" >
+        <action
+            android:id="@+id/action_nav_blog_to_nav_blogPost"
+            app:destination="@id/nav_blogPost" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_blogPost"
+        android:name="edu.uw.tcss450.blog.BlogPostFragment"
+        android:label="fragment_blog_post"
+        tools:layout="@layout/fragment_blog_post" />
+</navigation>

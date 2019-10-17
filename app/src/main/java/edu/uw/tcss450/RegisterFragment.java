@@ -98,7 +98,7 @@ public class RegisterFragment extends Fragment {
         if (nc.getCurrentDestination().getId() != R.id.registerFragment) {
             nc.navigateUp();
         }
-        nc.navigate(R.id.action_registerFragment_to_successFragment, args);
+        nc.navigate(R.id.action_registerFragment_to_homeActivity, args);
     }
 
 
